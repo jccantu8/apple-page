@@ -1,0 +1,165 @@
+/**** RESET ****/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************/
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	/* Box-model */
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 5fr 1fr;
+	width: 50%;
+	height: 80%;
+	margin: auto;
+
+	/* Typography */
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	
+}
+
+main .large-background {
+	/* Box-model */
+	grid-column: 1 / 5;
+	grid-row: 1;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+
+	/* Visual */
+	background-image: url("images/background1.jpg");
+	background-size: cover;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+main .large-background a:link {
+	/* Typography */
+	color: white;
+	text-decoration: none;
+}
+
+main .large-background a:hover {
+	/* Typography */
+	text-decoration: underline;
+}
+
+main .small-background {
+	/* Box-model */
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+footer {
+	/* Box-model */
+	width: 45%;
+	margin: auto;
+	padding-top: 20px;
+}
+
+footer nav {
+	/* Positioning */
+	float: right;
+}
+
+footer p {
+	/* Typography */
+	font-size: .8em;
+}
+
+footer li {
+	/* Box-model */
+	display: inline;
+}
+
+footer a:link {
+	/* Typography */
+	color: #0088cc;
+	text-decoration: none;
+}
+
+footer a:hover {
+	/* Typography */
+	color: #0088cc;
+	text-decoration: underline;
+}
+
+main .large-background nav {
+	/* Box-model */
+	width: 80%;
+	height: 10%;
+	margin: auto;
+	margin-top: 20px;
+
+	/* Typography */
+	font-size: .5em;
+	text-align: center;
+}
+
+main .large-background nav ul {
+	/* Box-model */
+	display: flex;
+  	flex-wrap: nowrap;
+	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	justify-content: space-around;
+  	align-items: center;
+
+  	/* Visual */
+	list-style-type: none;
+  		/* background taken from online solution at https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-backgrounds-and-gradients?ref=lnav */
+  	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  	border-radius: 5px;
+}
