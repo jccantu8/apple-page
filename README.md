@@ -4,4 +4,4 @@ The objective was to try to copy the [old Apple homepage](https://web.archive.or
 
 Here is the comparison.
 
-![Comparison 1](/comparison1.png?raw=true)
+![Comparison 1](/images/comparison1.png?raw=true)
